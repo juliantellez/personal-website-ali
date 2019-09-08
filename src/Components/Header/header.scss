@@ -1,29 +1,48 @@
+@import '../../Shared/Styles/fonts';
 @import '../../Shared/Styles/colors';
 @import '../../Shared/Styles/breakpoints';
 
 .header {
-    padding: 10px 15px;
-    border-bottom: 1px solid $color-gray-medium;
-    background-color: $color-white;
-}
-
-.nav {
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
+    justify-content: space-between;
+    transition: all .5s ease-in;
 
-.nav-element {
-    font-family: monospace;
-    font-weight: 600;
-    color: $color-black;
-}
-
-@media (max-width: $breakpoint-mobile) {
-    .nav {
-        flex-direction: column;
+    &-logo {
+        height: 30px;
+        margin-left: 20px;
     }
-    .nav-element {
-        margin-bottom: 5px;
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    &-links {
+        list-style: none;
+        display: flex;
+
+        li {
+            width: 100px;
+            padding: 10px;
+        }
+
+        a {
+            opacity: 0.8;
+            font-size: 20px;
+            line-height: 31px;
+            font-weight: $light;
+            text-decoration: none;
+            color: $color-greyish-brown-three;
+            transition: color .5s ease-in;
+
+            &:hover,
+            &--active {
+                border-bottom: 1px solid $color-grey-warm;
+            }
+        }
     }
 }

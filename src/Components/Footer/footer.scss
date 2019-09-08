@@ -1,13 +1,15 @@
 @import '../../Shared/Styles/colors';
+@import '../../Shared/Styles/fonts';
 
 .footer {
-    padding: 10px 15px;
-    width: 100%;
-}
-
-.footer-copyrights {
-    color: $color-gray-dark;
-    font-size: 16px;
-    pointer-events: none;
     text-align: center;
+    padding: 10px;
+
+    &-link {
+        font-size: $fontSize-small;
+        text-decoration: none;
+
+        color: $color-gray-dark;
+        text-align: center;
+      }
 }

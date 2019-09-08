@@ -5,7 +5,7 @@ import '../../Shared/Styles/global.scss';
 import * as styles from './body.scss';
 
 interface IBodyProps {
-    children?: JSX.Element[];
+    children?: JSX.Element[] | JSX.Element;
 }
 
 const Body = (props: IBodyProps) => (

@@ -1,15 +1,18 @@
 import * as React from 'react';
 
+import {Link} from 'react-router-dom';
+
 import * as styles from './footer.scss';
+import RoutePath from '../../Routes/Constants/RoutePath';
 
 const Footer = () => {
     const getYear = () => new Date().getFullYear();
 
     return (
         <footer className={styles.footer}>
-            <div className={styles.footerCopyrights}>
-                Julian Tellez © {getYear()}
-            </div>
+            <Link className={styles.footerLink} to={RoutePath.HOME}>
+                www.aliway.co © {getYear()}
+            </Link>
         </footer>
     );
 };

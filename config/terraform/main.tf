@@ -3,7 +3,7 @@ terraform {
 
   backend "s3" {
     bucket  = "julian-tellez-tfstate"
-    key     = "personal-website"
+    key     = "personal-website-ali"
     region  = "us-east-1"
     encrypt = true
     profile = "personal"

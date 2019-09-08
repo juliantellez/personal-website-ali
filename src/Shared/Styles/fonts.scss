@@ -1,28 +1,33 @@
 /* HelveticaNeue */
 @font-face {
-    font-family: 'Roboto';
-    src: url('/assets/fonts/Roboto/Roboto-Thin.woff2') format('woff2');
+    font-family: 'customFont';
+    src: url('/assets/fonts/Custom/light.woff2') format('woff2');
     font-weight: 1;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('/assets/fonts/Roboto/Roboto-Light.woff2') format('woff2');
-    font-weight: 400;
+    font-family: 'customFont';
+    src: url('/assets/fonts/Custom/regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('/assets/fonts/Roboto/Roboto-Regular.woff2') format('woff2');
-    font-weight: 600;
+    font-family: 'customFont';
+    src: url('/assets/fonts/Custom/bold.woff2') format('woff2');
+    font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('/assets/fonts/Roboto//Roboto-Bold.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
+$fontFamily-base: 'customFont', 'Open Sans', sans-serif;
+
+//SIZES
+$fontSize-small:        10px;
+$fontSize-medium:       14px;
+$fontSize-large:        18px;
+
+//WEIGHT
+$light:               300;
+$regular:             400;
+$bold:                600;
