@@ -1,5 +1,5 @@
 enum PagesPath {
-    HOME = './Pages/Home',
+    HOME = './Pages/Home'
 }
 
 export default PagesPath;

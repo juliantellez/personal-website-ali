@@ -2,9 +2,9 @@ import * as React from 'react';
 import {Link} from 'react-router-dom';
 
 import RoutePath from '../../Routes/Constants/RoutePath';
+import Logo from '../Icons/Logo';
 
 import * as styles from './header.scss';
-import Logo from '../Icons/Logo';
 
 const Header = () => {
     return (
@@ -36,7 +36,6 @@ const Header = () => {
                         </Link>
                     </li>
                 </ul>} */}
-
             </nav>
         </header>
     );

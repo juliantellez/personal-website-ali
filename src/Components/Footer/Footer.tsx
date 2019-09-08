@@ -1,9 +1,9 @@
 import * as React from 'react';
-
 import {Link} from 'react-router-dom';
 
-import * as styles from './footer.scss';
 import RoutePath from '../../Routes/Constants/RoutePath';
+
+import * as styles from './footer.scss';
 
 const Footer = () => {
     const getYear = () => new Date().getFullYear();
