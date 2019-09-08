@@ -15,6 +15,6 @@ locals {
 
   cloudfront_origin_id = "s3-${local.bucket_name}${local.enviroment_delimiter}"
 
-  route53_zone_id     = "ZNFD9XO2P7BQI"
+  route53_zone_id     = "ZBWNYTY7VGVN8"
   route53_domain_name = "aliway.co"
 }
