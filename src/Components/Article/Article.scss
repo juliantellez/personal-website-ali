@@ -1,0 +1,71 @@
+@import '../../Shared/Styles/colors';
+@import '../../Shared/Styles/breakpoints';
+
+.article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color-gray-medium;
+    margin: 10px;
+
+    max-width: 300px;
+    min-height: 300px;
+    line-height: 24px;
+    background-color: $color-white;
+}
+
+.article-hero {
+    display: block;
+    max-width: 300px;
+    min-height: 300px;
+
+    background-color: $color-gray-light;
+    background-size: cover;
+}
+
+.article-content {
+    padding: 13px 20px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+@media (min-width: $breakpoint-mobile) {
+    .article {
+        flex-direction: row;
+        min-width: 500px;
+        min-height: 300px;
+        margin: 20px;
+    }
+
+    .article-hero {
+        width: 250px;
+        height: 300px;
+    }
+
+    .article-content {
+        max-width: 250px;
+        max-height: 300px;
+    }
+}
+
+.article-content-title {
+    font-weight: 600;
+}
+
+.article-content-metadata {
+    font-size: 12px;
+    color: $color-gray-dark;
+    margin-bottom: 3px;
+}
+
+.article-content-description {
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.article-content-description p {
+    font-size: 17px;
+}
