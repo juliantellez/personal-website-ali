@@ -11,3 +11,11 @@ This repository provisions [aliway.co](https://aliway.co). A space dedicated to 
 ## SVG icons
 
 - Downloaded from [simpleicons](https://simpleicons.org/).
+
+
+## Development Environment
+
+```
+nmv use v8.10
+npm run dev
+```
