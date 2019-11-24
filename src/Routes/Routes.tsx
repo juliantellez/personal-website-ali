@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router';
 
 import PagesPath from '../Constants/PagesPath';
 import lazyImport from '../lazyImport';
+
 import RoutePath from './Constants/RoutePath';
 
 const Routes = () => {

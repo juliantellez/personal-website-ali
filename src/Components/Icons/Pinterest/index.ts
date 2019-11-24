@@ -1,3 +1,3 @@
-import Pinterest from './Pinterest'
+import Pinterest from './Pinterest';
 
-export default Pinterest
+export default Pinterest;

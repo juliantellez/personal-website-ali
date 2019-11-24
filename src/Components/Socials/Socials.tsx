@@ -7,7 +7,7 @@ import LinkedIn from '../Icons/LinkedIn';
 import Mail from '../Icons/Mail';
 import Pinterest from '../Icons/Pinterest';
 
-import * as styles from './socials.scss'
+import * as styles from './socials.scss';
 
 interface IProps {
     linkedin: string;

@@ -1,3 +1,3 @@
-import Dribble from './Dribble'
+import Dribble from './Dribble';
 
-export default Dribble
+export default Dribble;
