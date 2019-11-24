@@ -1,0 +1,18 @@
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    list-style: none;
+
+    svg {
+        width: 63px;
+        height: 57px;
+        margin: 5px;
+        fill: var(--color-100);
+
+        path {
+            fill: var(--color-100);
+        }
+    }
+}

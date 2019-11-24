@@ -6,19 +6,19 @@ import lazyImport from '../lazyImport';
 import RoutePath from './Constants/RoutePath';
 
 const Routes = () => {
-    const Home = lazyImport(PagesPath.HOME, PagesPath.HOME, () =>
+    const HomePage = lazyImport(PagesPath.HOME, PagesPath.HOME, () =>
         Promise.resolve(true)
     );
 
-    const Contact = lazyImport(PagesPath.CONTACT, PagesPath.CONTACT, () =>
+    const ContactPage = lazyImport(PagesPath.CONTACT, PagesPath.CONTACT, () =>
         Promise.resolve(true)
     );
 
     return (
         <React.Suspense fallback={<div>loading...</div>}>
             <Switch>
-                <Route component={Contact} path={RoutePath.CONTACT} />
-                <Route component={Home} />
+                <Route component={ContactPage} path={RoutePath.CONTACT} />
+                <Route component={HomePage} />
             </Switch>
         </React.Suspense>
     );
