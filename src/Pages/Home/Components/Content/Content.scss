@@ -64,3 +64,14 @@
 .gallery-anchor:hover .gallery-anchor-icon {
     opacity: 1;
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .gallery-anchor {
+        height: 10rem;
+
+        &:nth-child(1),
+        &:nth-child(10) {
+            min-height: 10rem;
+        }
+    }
+}
