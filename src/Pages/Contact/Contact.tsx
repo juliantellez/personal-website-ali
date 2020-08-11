@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import Body from '../../Components/Body/Body';
-import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import Socials from '../../Components/Socials';
 
@@ -20,13 +19,11 @@ const ContactPage = () => {
                 <div className={styles.contactTitle}>Follow my work</div>
                 <Socials
                     linkedin="https://www.linkedin.com/in/jelena-gubina-b0628824/"
-                    dribble="https://dribbble.com/vilvity/"
                     pinterest="https://www.pinterest.co.uk/alionagubina/"
                     instagram="https://www.facebook.com/aliona.gubina/"
                     mail="mailto:jgubina@gmail.com?Subject=Hi%20Ali"
                 />
             </main>
-            <Footer />
         </Body>
     );
 };

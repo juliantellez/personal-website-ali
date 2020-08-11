@@ -4,7 +4,7 @@
   "description": "personal website",
   "main": "dist/main.js",
   "scripts": {
-    "start": "TS_NODE_PROJECT=config/typescript/tsconfig.node.json ts-node -r tsconfig-paths/register ./server/Server.ts",
+    "start": "npm run types:sass:watch | TS_NODE_PROJECT=config/typescript/tsconfig.node.json ts-node -r tsconfig-paths/register ./server/Server.ts",
     "types:sass": "rm -rf **/*.scss.d.ts && tsm src --camelCase",
     "types:sass:watch": "npm run types:sass -- --watch",
     "dev": "npm run types:sass:watch | npm run start",

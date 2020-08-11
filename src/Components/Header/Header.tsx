@@ -14,28 +14,26 @@ const Header = () => {
                     <Logo className={styles.headerLogo} />
                 </Link>
 
-                {/* {<ul className={styles.headerLinks}>
-                    <li>
-                        <Link>
-                            Home
-                        </Link>
-                    </li>
-                    <li>
+                {
+                    <ul className={styles.headerLinks}>
+                        {/* <li>
                         <Link>
                             About
                         </Link>
-                    </li>
-                    <li>
-                        <Link>
-                            Projects
-                        </Link>
-                    </li>
-                    <li>
-                        <Link>
-                            Contact
-                        </Link>
-                    </li>
-                </ul>} */}
+                    </li> */}
+                        <li>
+                            <a
+                                href="https://www.behance.net/aliwayportdc79/projects"
+                                target="_blank"
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <Link to={RoutePath.CONTACT}>Contact</Link>
+                        </li>
+                    </ul>
+                }
             </nav>
         </header>
     );
